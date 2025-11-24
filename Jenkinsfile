@@ -13,7 +13,7 @@ pipeline {
         stage ('groovycodestage') {
             steps {
                 script{
-                    def cor="ss"
+                    def cor="ssa"
                     if (cor =='ss') {
                         echo "sssss"
                     }
