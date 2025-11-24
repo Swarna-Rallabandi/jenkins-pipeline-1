@@ -8,5 +8,8 @@ pipeline {
                 sh 'hostname -i'
             }
         }
+        stage ('new stage') {
+            steps {
+                echo "welcome to pipelines"
     }
 }
