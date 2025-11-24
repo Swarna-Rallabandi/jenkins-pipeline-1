@@ -10,11 +10,11 @@ pipeline {
             }
         }
     }
-        stage ('groovycodestage'){
+        stage ('groovycodestage') {
             steps {
                 script{
                     def cor="ss"
-                    if (cor =='ss'){
+                    if (cor =='ss') {
                         echo "sssss"
                     }
                     else {
