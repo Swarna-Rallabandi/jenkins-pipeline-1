@@ -7,6 +7,9 @@ pipeline {
         {
             steps {
                 echo "hello"
+                sh 'hostname -i'
+                sh 'hostname -i'
+                sh 'hostname -i'
             }
         }
     
