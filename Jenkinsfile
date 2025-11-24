@@ -9,7 +9,7 @@ sleep 20pipeline {
             steps {
                 echo "hello"
                 
-                sleep 20
+               // sleep 20
                 echo "sleep done "
             }
         }
