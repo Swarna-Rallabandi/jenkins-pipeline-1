@@ -1,4 +1,5 @@
-pipeline {
+
+sleep 20pipeline {
     agent {
         label 'java-slave4'
     }
@@ -10,6 +11,8 @@ pipeline {
                 sh 'hostname -i'
                 sh 'hostname -i'
                 sh 'hostname -i'
+                sleep 20
+                echo "sleep done "
             }
         }
     
