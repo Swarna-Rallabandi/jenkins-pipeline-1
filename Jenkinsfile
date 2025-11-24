@@ -8,7 +8,7 @@ pipeline {
             echo " this is a build stage"
          }
     }
-    stage ('groovycodestage'){
+       stage ('groovycodestage'){
         steps {
             script {
                 def cource = 'k8s'
