@@ -10,7 +10,7 @@ pipeline {
             }
         }
     }
-        stage (groovycodestage){
+        stage ('groovycodestage'){
             steps {
                 script{
                     def cor="ss"
