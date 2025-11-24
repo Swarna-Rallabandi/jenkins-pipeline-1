@@ -9,7 +9,7 @@ pipeline {
                 echo "hello"
             }
         }
-    }
+    
         stage ('groovycodestage') {
             steps {
                 script{
@@ -25,4 +25,4 @@ pipeline {
             }
         }
     }
-
+}
