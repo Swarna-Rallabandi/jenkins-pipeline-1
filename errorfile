@@ -1,0 +1,18 @@
+pipeline {
+    agent {
+        label 'java-slave4'
+    }
+    stages{
+        stage ('build'){
+            steps {
+                echo "welcome to jenkins pipeline"
+                error "this is a failure"
+            }
+        }
+        stage ('scans') {
+            steps {
+                echo "executing sonar scans......"
+            }
+        }
+    }
+}
