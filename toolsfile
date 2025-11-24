@@ -2,7 +2,7 @@
     agent {
         label 'java-slave4'
     }
-    tools{
+    tools {
         maven 'MAVEN_3.8.9' // the same name should be configured in the tools section
     }
     stages {
