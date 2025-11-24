@@ -1,14 +1,15 @@
 pipeline {
     agent {
         label 'java-slave4'
-        stages {
-            stage ('first stage')
-            {
-                steps {
-                    echo "hello"
-                }
+    }
+    stages {
+        stage ('first stage')
+        {
+            steps {
+                echo "hello"
             }
         }
+    }
         stage (groovycodestage){
             steps {
                 script{
