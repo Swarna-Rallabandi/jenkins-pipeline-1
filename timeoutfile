@@ -1,0 +1,36 @@
+pipeline {
+    agent {
+        label 'java-slave4'
+    }
+    stages {
+        stage ('build'){
+            steps {
+                echo "building applicaiton"
+            }
+        }
+        stage ('tests')
+        {
+            steps{
+                echo "steing applicaitno"
+            }
+        }
+        stage ('deploytotest'){
+            steps {
+                echo 'deploying to tests'
+            }
+        }
+        stage ('deploy to dev'){
+            steps {
+                echo " deploying to dev"
+            }
+        }
+        stage ('deploy to prod') {
+            steps {
+                timeout (time: 5, unit: 'SECONDS'){
+                      echo " deploying to prod"
+                }
+               
+            }
+        }
+    }
+}
