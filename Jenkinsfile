@@ -8,9 +8,7 @@ sleep 20pipeline {
         {
             steps {
                 echo "hello"
-                sh 'hostname -i'
-                sh 'hostname -i'
-                sh 'hostname -i'
+                
                 sleep 20
                 echo "sleep done "
             }
