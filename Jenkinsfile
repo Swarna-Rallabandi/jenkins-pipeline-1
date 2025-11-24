@@ -13,3 +13,5 @@ pipeline {
                 echo "welcome to pipelines"
     }
 }
+    }
+}
