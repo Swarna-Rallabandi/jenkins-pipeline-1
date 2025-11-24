@@ -6,10 +6,12 @@ pipeline {
         maven 'MAVEN_3.8.9' // the same name should be configured in the tools section
     }
     stages {
-        stage ('maven')
-        steps {
-            echo " this is maven sectoin"
-            sh 'maven --version'
+        stage ('maven'){
+            steps {
+                echo " this is maven sectoin"
+                sh 'maven --version'
+            }
         }
+            
     }
 }
