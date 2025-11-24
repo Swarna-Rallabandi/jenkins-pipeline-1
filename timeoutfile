@@ -28,6 +28,7 @@ pipeline {
             steps {
                 timeout (time: 5, unit: 'SECONDS'){
                       echo " deploying to prod"
+sleep 60
                 }
                
             }
