@@ -3,12 +3,12 @@ pipeline {
         label 'java-slave4'
     }
     stages {
-        stage ('build')
-         steps {
+     stage ('build')
+        steps {
             echo " this is a build stage"
          }
     }
-       stage ('groovycodestage'){
+     stage ('groovycodestage'){
         steps {
             script {
                 def cource = 'k8s'
